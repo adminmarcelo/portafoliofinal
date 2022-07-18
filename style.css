@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-top: 50px;
+}
+
+header{
+    width: 100%;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+}
+.inicio{
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+}
+
+.nombre{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.linkinterno a{
+    margin-left: 4px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.linkinterno a:link{
+    color: darkblue;
+}
+.linkinterno a:hover{
+   background-color: darkblue;
+   color: white;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+}
+
+.presentacion{
+    display: flex;
+    height: 400px;
+   background-color: cornflowerblue;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   
+  
+}
+.presentacion div{
+    width: 50%;
+       
+   font-size: 1.5rem;
+}
+#Imagen{
+    
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+            
+}
+#Imagen img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  border: 15px outset rgb(244, 244, 245);
+
+}
+.parteuno{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partedos{
+margin-top: 20px;
+display: flex;
+justify-content: space-between;
+
+
+}
+.partedos a{
+    
+    text-decoration: none;
+    color: rgb(161, 195, 235);
+   
+   
+}
+#mistrabajos{
+    background-color: black;
+    font-size: 1.2rem;
+
+    padding: 5px;
+}
+
+/*hamburguesa*/
+.hamburguesa{
+width: 25px;
+height: 25px;
+display:none;
+}
+
+
+
+/*acerca de  mi*/
+.AcercaDeMi{
+    width: 80%;
+margin: auto;
+margin-top: 20px;
+text-align: center;
+
+
+}
+.AcercaDeMi h3{
+    margin: 10px;
+    display: inline-block;
+   background-color: cornflowerblue;
+   font-size: 1.5rem;
+}
+.AcercaDeMi h1{
+    margin: 10px;
+}
+
+
+.SoyMarcelo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.SoyMarcelo .izquierdo{
+width: 50%;
+text-align: start;
+font-size: 1.2rem;
+
+}
+.SoyMarcelo .izquierdo u{
+   text-decoration-color:  cornflowerblue;
+}
+.SoyMarcelo .izquierdo h2,.SoyMarcelo .izquierdo p{
+    padding: 5px;
+}
+.SoyMarcelo .derecho{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/*numerito*/
+.SoyMarcelo .derecho div{
+    width: 150px;
+    height: 150px;
+    font-size: 6rem;
+    background-color:cornflowerblue ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+       
+}
+
+.flecha{
+    width: 20px;
+    height: 20px;
+}
+.contactamee{
+    display: flex;
+    justify-content: center;
+align-items: center;
+}
+
+
+
+.informacion{
+    width: 100%;
+   margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.informacion .informacionuno,.informacion .informaciondos{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    align-items: center;
+    
+}
+.AcercaDeMi .informacion section{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.informacion h3{
+    background-color: transparent;
+    border-bottom: 2px inset cornflowerblue;
+    margin: 5%;
+    padding: 2%;
+
+}
+/*color y tamaño iconos*/
+.LoQueHagoYo, .Resumen{
+    margin-top: 20px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+.LoQueHago p{
+    width: 50px;
+   fill: cornflowerblue;
+   margin: auto;
+   }
+   .LoQueHagoYo h2{
+    margin-top: 10px;
+    display: inline-block;
+   background-color: cornflowerblue;
+   margin: auto;
+}
+.LoQueHagoYo h1{
+    margin-top: 10px;
+}
+   /*padre de lo que hago
+   sacado de https://www.w3schools.com/css/css_grid.asp*/
+   .LoQueHago{
+    margin: auto;
+    display: grid ;
+    grid-template-columns: auto auto auto;
+    gap: 50px 120px;
+   margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+   }
+   .LoQueHagoYo h4{
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 400;
+   }
+   .Resumen h2{
+    margin-top: 10px;
+    display: inline-block;
+   background-color: cornflowerblue;
+   
+ }
+ .Resumen h1{
+    margin-top: 10px;}
+.Resumenpadre{
+     display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+
+    padding: 5px;
+   }
+   .Resumenpadre section{
+    width: 50%;
+   
+    
+   }
+  .Resumenpadre h3, .Resumenpadre h4,.Resumenpadre p{
+   margin-left: 7px;
+    padding-top: 10px;
+    padding-left: 5px;
+    border-left: 2px solid cornflowerblue;
+   }
+   .Resumenpadre p{
+    font-style: italic;
+    padding-top: 0%;
+   }
+   .Progreso{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    text-align: left;
+    margin-top: 5px;
+        
+
+   }
+   .Progreso section{
+    padding: 10px;
+    width: 50%;
+    font-weight: 600;
+   }
+  .Progreso label{
+    display: flex;
+  }
+  .habilidades h3{
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 5px;
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 10px;
+    
+  }
+  .CV{
+    margin: auto;
+    margin-top:15px ;
+    display:inline-block;
+    border: 3px solid cornflowerblue; ;
+    text-align: center
+    
+    
+}
+.CV a{
+    text-decoration: none;
+    padding: 2px;
+    font-size: 1.5rem;
+    transition-duration: 0.5s;
+transition-property: margin-right, color,font-size,font-weight;
+}
+.CV a:hover{
+    color: white;
+    background-color: cornflowerblue;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 600;
+    
+}
+.portafolio{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+   
+}
+.portafolio h3{
+    margin: auto;
+    display: inline-block;
+    background-color: cornflowerblue;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.5em;
+    }
+    .portafolio h1{
+        margin-bottom: 8px;
+    }
+    .barraportafolio a{
+        margin:12px ;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: rgba(73, 71, 71, 0.7);
+
+    }
+  .fotosportafolio{
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    margin: 0%;
+  }
+   
+
+ .contactame{
+    display: flex;
+    align-items: center;
+    
+    background-color: cornflowerblue;
+    padding: 20px;
+ }
+ .informacionfinal{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+ }
+ .redessociales{
+     width: 70%;
+    margin-top: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+
+ }
+  .redessociales svg{
+    width: 30px;
+    height: 30px;
+  }
+  .form, .form label,button{
+   
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+  }
+.form{
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+   display: flex;
+   flex-direction: column;
+    font-size: 1.5rem;
+    align-items: center;
+
+}
+.formulariocompleto{
+    width: 100%;
+}
+.formulariocompleto input, .formulariocompleto textarea{
+    width:100%;
+    background-color:rgb(85, 126, 203);
+    border: 1px dashed blue;
+}
+button{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+   }
+.autor{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+.autor section{
+    width: 50%;
+}
+.autor p{
+    margin: 10px;
+    font-size: 0.7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media*/
+@media (max-width: 800px) {
+    .linkinterno {
+      display: none;
+    }
+    .hamburguesa{
+      display: inline;
+     position: relative;
+     bottom: 8px;
+    }
+    .SoyMarcelo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .AcercaDeMi{
+        width: 100%;
+        margin: 0%;
+    }
+    .SoyMarcelo .izquierdo{
+        width: 100%;
+        text-align: center;
+    }
+    .presentacion{
+        flex-direction: column;
+        height: 100%;
+    }
+    .parteuno{
+       
+        width: 100%;
+    }
+   /* .informacion{
+       
+       margin-top: 20px;
+        
+        flex-direction: column;
+
+
+  }*/
+  .informacion {
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    flex-direction: column;
+    
+    
+}
+.informacion .informacionuno, .informacion .informaciondos{
+    text-align: center;
+    display: contents;
+    
+}
+/*seccion de foto*/
+.presentacion div{
+    width: 100%;
+   
+}
+#Imagen, #Imagen img{
+    
+    margin: auto;
+    width: 200px;
+    height: 200px;
+   
+}
+.LoQueHago{
+     grid-template-columns: auto auto ;
+     text-align: center;
+   }
+   .LoQueHagoYo h4{
+     font-size: 1rem;
+   
+   }
+   .fotosportafolio{
+    grid-template-columns: auto auto ;
+}
+
+
+
+
+
+
+
+@media (max-width: 550px){
+    .LoQueHago{
+        grid-template-columns: auto ;
+        text-align: center;
+      }
+      .LoQueHagoYo h4{
+        font-size: 1rem;
+                    
+      }
+      .Resumenpadre{
+        flex-direction: column;          
+        text-align: center;
+        justify-content: center;
+        align-items:center;
+       width: 100%;
+       }
+       .Resumenpadre section{
+        width: 90%;
+        margin-top: 10px;
+       }
+       .Progreso{
+        flex-direction: column;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+       }
+       .habilidades h3{
+        display: inline-block;
+        margin-bottom: 10px;
+        background-color:cornflowerblue ;
+       }
+       .Progreso section{
+        padding: 2px;
+        
+       }
+       .fotosportafolio{
+        grid-template-columns: auto;
+       }
+          }
+       .contactame{
+      
+        flex-direction: column;
+       }
+       .form{
+width: 90%;
+       }
+   }
